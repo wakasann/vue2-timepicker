@@ -166,6 +166,12 @@ var yourComponent = new Vue({
 <vue-timepicker v-model="yourTimeValue" format="HH:mm:ss"></vue-timepicker>
 ```
 
+### Change Input's Name,Class,Id Attr
+
+```html
+<vue-timepicker input-id-attr="test-ids" input-name-attr="mytime" input-class-attr="display-time form-control" ></vue-timepicker>
+```
+
 ### Get Time Picker's Current Value
 
 #### **Method 1:** Read value from `v-model`
@@ -254,6 +260,11 @@ Prop                  | Type      | Required | Default Value
 **minute-interval**   | _Number_  | no       | _undefined_
 **second-interval**   | _Number_  | no       | _undefined_
 **hide-clear-button** | _Boolean_ | no       | false
+**input-id-attr** | _String_ | no       | "vue2-timepicker"
+**input-name-attr** | _String_ | no       | "vue2timepicker"
+**input-class-attr** | _String_ | no       | "display-time"
+
+if you have set Input Class Prop Must include the "display-time" value，eg. "display-time form-control"
 
 ## Contribution
 
